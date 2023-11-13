@@ -1,0 +1,233 @@
+body{
+    background-color: #dfecf7;
+  }
+  
+  .container{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .comment-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .comment-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group input[type="email"]:focus,
+  .form-group textarea:focus {
+    background-color: #fff;
+  }
+  
+  .btn-submit {
+    background-color: #005aaa;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-submit:hover {
+    background-color: #003366;
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(to bottom, #003366, #005aaa);
+  }
+  
+  .gradient-bg .btn-submit {
+    background-color: #fff;
+    color: #005aaa;
+    border: 2px solid #fff;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .gradient-bg .btn-submit:hover {
+    background-color: #005aaa;
+    color: #fff;
+  }
+
+  /* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a background color and font for the body */
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #343a40; /* Dark gray background for the header */
+    padding: 15px 0;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .navbar-dark .navbar-toggler-icon {
+    background-color: #fff; /* White color for the navbar toggler icon */
+  }
+  
+  .navbar-nav .nav-link,
+  .navbar-nav .dropdown-item {
+    color: #fff;
+  }
+  
+  /* Style the main content */
+  .container {
+    margin-top: 50px;
+  }
+  
+  /* Style the course review section */
+  .courese-review {
+    padding: 20px;
+  }
+  
+  .course-department {
+    font-size: 1.2rem;
+  }
+  
+  .select {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the form */
+  #myForm {
+    margin-top: 20px;
+  }
+  
+  #userName,
+  #userEmail,
+  #userComment {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Add additional styles based on your design preferences */
+/* Style the form container */
+#myForm {
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style form elements */
+  #userName,
+  #userEmail,
+  #userComment {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  #userComment {
+    resize: vertical; /* Allow vertical resizing of the textarea */
+  }
+  
+  /* Style the "Publish" button */
+  #myForm input[type="button"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #myForm input[type="button"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Add responsive styles */
+  @media (max-width: 768px) {
+    #myForm {
+      max-width: 100%;
+    }
+  }
+    
+/* Style the comment display section */
+#data {
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #00BFFF; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style individual comments */
+  .comment {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #fff; /* White comment box */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .comment i {
+    position: absolute;
+    top: 15px
+  }

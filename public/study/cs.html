@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+   
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    
+    <title>TryHard</title>
+    <div id="google_translate_button"></div>
+        <script
+            type="text/javascript"
+            src="http:////translate.google.com/translate_a/element.js?cb=googleTranslateInit"
+        ></script>
+        <script type="text/javascript">
+            function googleTranslateInit() {
+                new google.translate.TranslateElement(
+                    { pageLanguage: 'en' },
+                    'google_translate_button'
+                );
+            }
+        </script>
+    <link rel="stylesheet" href="cs.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    
+    <div id="root"></div>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Student's name</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Study Management</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="./courses.html">Courses Review</a>
+                    <a class="dropdown-item" href="./recommend.html">Recommended Course</a>
+                    <a class="dropdown-item" href="./map.html">Map</a>
+                  </div>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="btn btn-secondary dropdown-toggle" href="../social/social.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Social Life</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                   
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Your profile</a>
+                    <a class="dropdown-item" href="#">Your Account</a>
+                    <a class="dropdown-item" href="#">Contact services</a>
+                  </div>
+                </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0" id="searchForm">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="query">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+           
+        </div>
+    </nav>
+  </header>
+
+  
+  <div class="courese-review">
+
+    <div class="row2">
+        <label for="search" class="course-department">Find Departments</label>
+          <div class="select">
+            <select name="" id="s2">
+              <option value="1">AFRICANA STUDIES</option>
+              <option value="2">ART AND ART HISTORY</option>
+              <option value="3">ASIAN STUDIES</option>
+              <option value="4">BIOLOGY</option>
+              <option value="5">BUSINESS</option>
+              <option value="6">CHEMISTRY AND BIOCHEMISTRY</option>
+              <option value="7">CLASSICAL STUDIES</option>
+              <option value="8">COMMUNICATION AND THEATRE</option>
+              <option value="9">COMPUTER SCIENCE</option>
+              <option value="10">ECONOMICS AND MANAGEMENT</option>
+              <option value="11">EDUCATION STUDIES</option>
+              <option value="12">ETHICS IN SOCIETY</option>
+              <option value="13">FILM AND MEDIA ARTS</option>
+              <option value="14">GEOLOGY AND ENVIRONMENTAL GEOSCIENCE</option>
+              <option value="15">GERMAN STUDIES</option>
+              <option value="16">GLOBAL FRENCH STUDIES</option>
+              <option value="17">GLOBAL HEALTH</option>
+              <option value="18">HISTORY</option>
+              <option value="19">GLOBAL LANGUAGE STUDIES</option>
+              <option value="20">HISPANIC STUDIES</option>
+              <option value="21">LATIN AMERICAN AND CARIBBEAN STUDIES</option>
+              <option value="22">ITALIAN CULTURAL STUDIES</option>
+              <option value="23">KINESIOLOGY</option>
+              <option value="24">MUSIC</option>
+              <option value="25">PEACE AND CONFLICT STUDIES</option>
+              <option value="26">MATHEMATICAL SCIENCES</option>
+              <option value="27">PHYSICS AND ASTRONOMY</option>
+              <option value="28">POLITICAL SCIENCE</option>
+              <option value="29">PHILOSOPHY</option>
+              <option value="30">RELIGIOUS STUDIES</option>
+              <option value="31">SOCIOLOGY AND ANTHROPOLOGY</option>
+              <option value="32">PSYCHOLOGY AND NEUROSCIENCE</option>
+              <option value="33">WORLD LITERATURE</option>
+              <option value="34">WOMENS, GENDER AND SEXUALITY STUDIES</option>
+            </select>
+          </div>
+        </div>
+        <h2> Computer Science Courses </h2>
+        <div class="container course-items">
+            <h3 class="text-danger mt-5 text-center" style="display:none" id="para">Not Found</h3>
+              <div class="row" id="card">
+                  <div class="container col-lg-4">
+                          <div class="courses-number">
+                                <a href="csc.html">Computer Science I    CSC 121</a> 
+                          </div>
+                          <ul id="items"></ul>
+                  </div>
+                  <div class="container col-lg-4">
+                      <div class="courses-number">
+                            <a href="csc.html">Data Structures   CSC 122</a>
+                      </div>
+                      <ul id="items"></ul>
+                  </div>
+                  <div class="container col-lg-4">
+                      <div class="courses-number">
+                            <a href="csc.html">First-year Seminar    CSC 197</a>
+                      </div>
+                      <ul id="items"></ul>
+                  </div>
+                  <div class="container col-lg-4">
+                      <div class="courses-number">
+                            <a href="csc.html">Computer Systems  CSC 231</a>
+                      </div>
+                      <ul id="items"></ul>
+                  </div>
+                  <div class="container col-lg-4">
+                      <div class="courses-number">
+                            <a href="csc.html">Object Oriented Software Development  CSC 232</a>
+                      </div>
+                      <ul id="items"></ul>
+                  </div>
+                  <div class="container col-lg-4">
+                      <div class="courses-number">
+                            <a href="csc.html">Foundation of Computation     CSC 233</a>
+                      </div>
+                      <ul id="items"></ul>
+                  </div>
+                  <div class="container col-lg-4">
+                    <div class="courses-number">
+                          <a href="csc.html">Writing in Computer Science     CSC 240</a>
+                    </div>
+                    <ul id="items"></ul>
+                    </div>
+                    <div class="container col-lg-4">
+                        <div class="courses-number">
+                              <a href="csc.html">Computer Science Topics     CSC 296</a>
+                        </div>
+                        <ul id="items"></ul>
+                    </div>
+                    <div class="container col-lg-4">
+                        <div class="courses-number">
+                              <a href="csc.html">Human Computer Interaction     CSC 320</a>
+                        </div>
+                        <ul id="items"></ul>
+                    </div>
+                    <div class="container col-lg-4">
+                        <div class="courses-number">
+                              <a href="csc.html">Computer Networking    CSC 322</a>
+                        </div>
+                        <ul id="items"></ul>
+                    </div>
+                    <div class="container col-lg-4">
+                        <div class="courses-number">
+                              <a href="csc.html">Artificial Intelligence    CSC 330</a>
+                        </div>
+                        <ul id="items"></ul>
+                    </div>
+                    <div class="container col-lg-4">
+                        <div class="courses-number">
+                              <a href="csc.html">Web Programming and CyberSecurity    CSC 340</a>
+                        </div>
+                        <ul id="items"></ul>
+                    </div>
+                    <div class="container col-lg-4">
+                        <div class="courses-number">
+                              <a href="csc.html">Graphics     CSC 350</a>
+                        </div>
+                        <ul id="items"></ul>
+                    </div>
+                    <div class="container col-lg-4">
+                        <div class="courses-number">
+                              <a href="csc.html">Autonomous Robotics     CSC 360</a>
+                        </div>
+                        <ul id="items"></ul>
+                    </div>
+                    <div class="container col-lg-4">
+                        <div class="courses-number">
+                              <a href="csc.html">Data Mining     CSC 370</a>
+                        </div>
+                        <ul id="items"></ul>
+                    </div>
+                    <div class="container col-lg-4">
+                        <div class="courses-number">
+                              <a href="csc.html">Computer Science Topics     CSC 396</a>
+                        </div>
+                        <ul id="items"></ul>
+                    </div>
+                    <div class="container col-lg-4">
+                        <div class="courses-number">
+                              <a href="">Independent Study    CSC 398</a>
+                        </div>
+                        <ul id="items"></ul>
+                    </div>
+                    <div class="container col-lg-4">
+                        <div class="courses-number">
+                              <a href="">Programming Languages     CSC 424</a>
+                        </div>
+                        <ul id="items"></ul>
+                    </div>
+                    <div class="container col-lg-4">
+                        <div class="courses-number">
+                              <a href="">Compilers     CSC 426</a>
+                        </div>
+                        <ul id="items"></ul>
+                    </div>
+                    <div class="container col-lg-4">
+                        <div class="courses-number">
+                              <a href="">operating Systems     CSC 428</a>
+                        </div>
+                        <ul id="items"></ul>
+                    </div>
+                    <div class="container col-lg-4">
+                        <div class="courses-number">
+                              <a href="">Computer Security     CSC 430</a>
+                        </div>
+                        <ul id="items"></ul>
+                    </div>
+                    <div class="container col-lg-4">
+                        <div class="courses-number">
+                              <a href="">Theory of Computaion     CSC 440</a>
+                        </div>
+                        <ul id="items"></ul>
+                    </div>
+                    <div class="container col-lg-4">
+                        <div class="courses-number">
+                              <a href="">Datatbase and file Systems     CSC 480</a>
+                        </div>
+                        <ul id="items"></ul>
+                    </div>
+                    <div class="container col-lg-4">
+                        <div class="courses-number">
+                              <a href="">Computer Science Topics    CSC 496</a>
+                        </div>
+                        <ul id="items"></ul>
+                    </div>
+                    <div class="container col-lg-4">
+                        <div class="courses-number">
+                              <a href="">Senior Project    CSC 498</a>
+                        </div>
+                        <ul id="items"></ul>
+                    </div>
+  </div>
+
+
+
+   
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+  crossorigin="anonymous"></script>
+  </body>
+</html>

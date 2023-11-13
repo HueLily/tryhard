@@ -213,4 +213,56 @@ window.addEventListener('load', () => {
   })
 })
       
-    
+//Set time count down
+var countDownDate = new Date ("Nov 17, 2023 00:00:00").getTime();
+
+var x = setInterval(function() {
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance/(1000*60*60*24));
+  var hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+  var min = Math.floor((distance%(1000*60*60))/(1000*60));
+
+  document.getElementById("time").innerHTML = days + " Days " + hours + " Hours " + min + "Minutes" ;
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("time").innerHTML = "RUN OUT OF SWIPES";
+  }
+}, 1000)
+
+
+//calendar
+
+let date = new Date();
+let year = date.getFullYear();
+let month = date.getMonth();
+ 
+const day = document.querySelector(".calendar-dates");
+ 
+const currdate = document
+  .querySelector(".calendar-current-date");
+ 
+const prenexIcons = document
+  .querySelectorAll(".calendar-navigation span");
+
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+];
+ 
+
+
+
